@@ -61,6 +61,8 @@ Most icons can be imported using the following CSS:
 
 Add this to the top of `Dashboard -> General -> Custom CSS code`.
 
+**It is no longer relevant. shoko and stash now work when using public-icon.css**
+
 ### Local Metadata Providers
 
 For local metadata providers like Stash and Shoko, update the CSS files with your local server address.
@@ -225,6 +227,66 @@ Modify and add the following CSS to the top of `Dashboard -> General -> Custom C
 .itemExternalLinks a[href*="http://CHANGE_ME:9999/scenes"] {
 	font-size: 0;
 }
+
+.itemExternalLinks a[href*="http://CHANGE_ME:9999/studios"] {
+    background: none !important;
+    color: transparent !important;
+    padding: 0 !important;
+}
+
+.itemExternalLinks a[href*="http://CHANGE_ME:9999/studios"]::before {
+	content: "";
+	display: inline-block;
+	width: 35px;
+	height: 25px;
+	background-image: url('https://cdn.jsdelivr.net/gh/Druidblack/jellyfin-icon-metadata@main/icons/stash/stash.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+.itemExternalLinks.focuscontainer-x > a[href*="http://CHANGE_ME:9999/studios"]:hover,
+.itemExternalLinks.focuscontainer-x > a[href*="http://CHANGE_ME:9999/studios"]:focus,
+.itemExternalLinks.focuscontainer-x > a[href*="http://CHANGE_ME:9999/studios"]:active {
+    background: none !important;
+    filter: none !important;
+    border: none !important;
+}
+
+.itemExternalLinks a[href*="http://CHANGE_ME:9999/studios"] {
+	font-size: 0;
+}
+
+.itemExternalLinks a[href*="http://CHANGE_ME:9999/performers"] {
+    background: none !important;
+    color: transparent !important;
+    padding: 0 !important;
+}
+
+.itemExternalLinks a[href*="http://CHANGE_ME:9999/performers"]::before {
+	content: "";
+	display: inline-block;
+	width: 35px;
+	height: 25px;
+	background-image: url('https://cdn.jsdelivr.net/gh/Druidblack/jellyfin-icon-metadata@main/icons/stash/stash.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+.itemExternalLinks.focuscontainer-x > a[href*="http://CHANGE_ME:9999/performers"]:hover,
+.itemExternalLinks.focuscontainer-x > a[href*="http://CHANGE_ME:9999/performers"]:focus,
+.itemExternalLinks.focuscontainer-x > a[href*="http://CHANGE_ME:9999/performers"]:active {
+    background: none !important;
+    filter: none !important;
+    border: none !important;
+}
+
+.itemExternalLinks a[href*="http://CHANGE_ME:9999/performers"] {
+	font-size: 0;
+}
 ```
 
 ## Screenshots
@@ -237,3 +299,7 @@ Modify and add the following CSS to the top of `Dashboard -> General -> Custom C
 ![Anime Episode](https://github.com/user-attachments/assets/2a04a2f9-ac98-4017-a838-37ca733489eb)
 
 **Credits:** This idea was inspired by the theme [Finimalism](https://github.com/tedhinklater/finimalism).
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Druidblack/jellyfin-icon-metadata&type=date&legend=top-left)](https://www.star-history.com/#Druidblack/jellyfin-icon-metadata&type=date&legend=top-left)
